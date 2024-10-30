@@ -1,9 +1,11 @@
-from langchain import Weaviate 
+from weaviate import Client
+from langchain_community.vectorstores import Weaviate
 
-def inialize_vector_store():
-        vector_store = Weaviate(
-                url="https://localhost:8080",
-                auth_client_secret=None
-        )
+def initialize_vector_store():
+    client = Client("http://localhost:8080")
 
-        return vector_store
+    index_name = "Document" 
+    text_key = "content"     
+
+    vector_store = Weaviate(client, index_name=index_name, text_key=text_key)
+    return vector_store

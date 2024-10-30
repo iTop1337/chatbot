@@ -1,22 +1,24 @@
 import streamlit as st
-import requests
-from .vector_database import inialize_vector_store
+import openai
+import os
+from dotenv import load_dotenv
 
-vector_store = inialize_vector_store()
+load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-st.title("Chatbot")
+def get_llm_response(message):
+    response = openai.Completion.create(
+        engine="gpt-3.5-turbo",
+        prompt=message,
+        max_tokens=50,
+    )
+    return response.choices[0].text.strip()
+
+st.title("Chatbot com LLM")
 st.write("Digite uma mensagem para conversar com o chatbot.")
 
 user_message = st.text_input("Sua mensagem:")
 
 if st.button("Enviar"):
-    response = requests.post(
-        "http://localhost:8000/api/chat/message/", 
-        data={"message": user_message}
-    )
-
-    if response.status_code == 200:
-        bot_response = response.json().get("response")
-        st.write(f"Bot: {bot_response}")
-    else:
-        st.write("Erro ao se comunicar com o chatbot.")
+    bot_response = get_llm_response(user_message)
+    st.write(f"Bot: {bot_response}")
