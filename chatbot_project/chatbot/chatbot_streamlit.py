@@ -1,5 +1,8 @@
 import streamlit as st
 import requests
+from .vector_database import inialize_vector_store
+
+vector_store = inialize_vector_store()
 
 st.title("Chatbot")
 st.write("Digite uma mensagem para conversar com o chatbot.")
