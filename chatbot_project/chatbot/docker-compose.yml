@@ -1,0 +1,9 @@
+version: '3'
+services:
+  chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "chatbot_container"
+    ports:
+      - "8501:8501"
