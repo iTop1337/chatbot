@@ -25,9 +25,7 @@ Além disso, recomenda-se configurar um ambiente virtual para o Python para isol
 
 1. **Clone o repositório do projeto** (ou baixe os arquivos do projeto):
 
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+bash git clone https://github.com/seu-usuario/seu-repositorio.git
 
 ## Estrutura do projeto
 
@@ -62,13 +60,13 @@ Acesse a Interface: Após iniciar o Streamlit, você verá um link no terminal c
 
 ## Exemplos de Uso
 
-Após iniciar a aplicação, você verá a interface com o título "Chatbot sobre Carros com FAISS". Você pode inserir perguntas como:
+Após iniciar a aplicação, você verá a interface com o título "Chatbot sobre Carros". Você pode inserir perguntas como:
 
-    Pergunta: "Qual é o melhor carro feito no Brasil?"
-        Resposta do Bot: "O Marea é o melhor carro feito no Brasil."
+Pergunta: "Qual é o melhor carro feito no Brasil?"
+Resposta do Bot: "O Marea é o melhor carro feito no Brasil."
 
-    Pergunta: "Qual é a frequência para troca de óleo?"
-        Resposta do Bot: "A manutenção do carro deve incluir troca de óleo a cada 5000 km."
+Pergunta: "Qual é a frequência para troca de óleo?"
+Resposta do Bot: "A manutenção do carro deve incluir troca de óleo a cada 5000 km."
 
 
 Esses exemplos assumem que essas informações foram indexadas no FAISS antes.
@@ -76,9 +74,8 @@ Esses exemplos assumem que essas informações foram indexadas no FAISS antes.
 
 ## Configurações Adicionais
 
-    Adicionando Novas Informações ao Índice FAISS:
-
-    Se você quiser adicionar novas informações ao chatbot, edite o array car_info no código e adicione novas frases:
+Adicionando Novas Informações ao Índice FAISS:
+Se você quiser adicionar novas informações ao chatbot, edite o array car_info no código e adicione novas frases:
 
  ____________________________________________________________________________________________________________________
          car_info = [
