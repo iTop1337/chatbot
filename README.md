@@ -25,7 +25,7 @@ Além disso, recomenda-se configurar um ambiente virtual para o Python para isol
 
 1. **Clone o repositório do projeto** (ou baixe os arquivos do projeto):
 
-bash git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/iTop1337/chatbot.git)
+bash git clone https://github.com/seu-usuario/seu-repositorio.git
 
 ## Estrutura do projeto
 
