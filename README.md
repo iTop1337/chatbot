@@ -78,12 +78,12 @@ Adicionando Novas Informações ao Índice FAISS:
 Se você quiser adicionar novas informações ao chatbot, edite o array car_info no código e adicione novas frases:
 
  ____________________________________________________________________________________________________________________
-         car_info = [
-             "O Marea é o melhor carro feito no Brasil.",
-             "O motor 20V do Marea é o mais potente do Brasil.",
-             "A manutenção do carro deve incluir troca de óleo a cada 5000 km.",
-             "Carros com transmissão automática costumam ser mais confortáveis para dirigir em trânsito pesado."
-            ]
+   car_info = [
+      "O Marea é o melhor carro feito no Brasil.",
+      "O motor 20V do Marea é o mais potente do Brasil.",
+      "A manutenção do carro deve incluir troca de óleo a cada 5000 km.",
+      "Carros com transmissão automática costumam ser mais confortáveis para dirigir em trânsito pesado."
+      ]
 ______________________________________________________________________________________________________________________           
 
 
